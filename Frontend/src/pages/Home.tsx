@@ -1,6 +1,9 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
+import FechaHora from '../components/fechaHora';
+import DatosCliente from '../components/DatosCliente';
+import SeleccionMesa from '../components/SeleccionMesa';
 
 const Home: React.FC = () => {
   return (
@@ -17,6 +20,9 @@ const Home: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <ExploreContainer />
+        <FechaHora/>
+        <DatosCliente/>
+        <SeleccionMesa/>
       </IonContent>
     </IonPage>
   );
